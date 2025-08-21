@@ -43,20 +43,6 @@ Flexible Layouts: Adapts seamlessly from mobile (320px) to desktop (1920px+)
 Touch-Friendly: Adequate button sizes and spacing for touch interfaces
 Readable Typography: Scalable fonts with proper line heights
 
-📁 File Structure
-project/
-│
-├── contact-osas.html          # Main HTML5 document
-├── css/
-│   └── style.css             # CSS3 stylesheet with animations
-├── img/
-│   ├── glowing-contact-us-image.png    # Header background
-│   └── call-center-representative.png   # Form background
-└── README.md                 # Documentation
-🛠️ Technical Implementation
-HTML5 Elements Used
-html<!-- Semantic Structure -->
-<header>, <section>, <form>
 
 <!-- Modern Form Elements -->
 <input type="email" required>
@@ -237,3 +223,10 @@ Address: 149 Trans Amadi Ind. Layout, Port Harcourt, Rivers, Nigeria
 
 📄 License
 This project demonstrates modern web development techniques using HTML5, CSS3, and Bootstrap 5. Customize as needed for your organization's requirements.
+    
+images of my design
+
+<img width="1328" height="686" alt="Screenshot 2025-08-21 141305" src="https://github.com/user-attachments/assets/b2dddf3d-7cd3-49ae-af1f-cea8e87ef8b3" />
+<img width="863" height="686" alt="Screenshot 2025-08-21 141700" src="https://github.com/user-attachments/assets/83aa592f-ca21-475a-87e1-4cda858c57aa" />
+<img width="1329" height="679" alt="Screenshot 2025-08-21 141247" src="https://github.com/user-attachments/assets/0b7a2e18-5dd5-4f55-9ce2-29189223242b" />
+
