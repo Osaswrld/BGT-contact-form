@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h5><a href="#">Home</a> &#8594; Contacts</h5>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="intro-text text-center mb-5">
+                <h2>Get In Touch</h2>
+                <p>Please fill out the contact form below, and we will get back to you as soon as possible. We look forward to connecting with you!</p>
+            </div>
+
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter Your Full Name" required aria-required="true">
+                                    <div class="invalid-feedback">Please enter your full name.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Valid Email" required aria-required="true">
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number" required aria-required="true">
+                                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="company" class="form-label">Company Name</label>
+                                    <input type="text" class="form-control" id="company" placeholder="Enter Company's Name">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="jobTitle" class="form-label">Job Title</label>
+                                    <input type="text" class="form-control" id="jobTitle" placeholder="Enter Job Title">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="service" class="form-label">Interested Service</label>
+                                    <select class="form-select" id="service" aria-required="false">
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="1">Production Enhancement Services</option>
+                                        <option value="2">Technical Consulting</option>
+                                        <option value="3">Equipment Solutions</option>
+                                        <option value="4">Training Services</option>
+                                        <option value="5">Other Services</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="source" class="form-label">How did you find us?</label>
+                                    <select class="form-select" id="source" aria-required="false">
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="1">Google Search</option>
+                                        <option value="2">Social Media</option>
+                                        <option value="3">Referral</option>
+                                        <option value="4">Website</option>
+                                        <option value="5">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="sourceOther" class="form-label">Specify if other</label>
+                                    <input type="text" class="form-control" id="sourceOther" placeholder="Specify if other">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Write Message Here..." maxlength="300" required aria-required="true"></textarea>
+                                    <div class="form-text">
+                                        <i class="fas fa-info-circle"></i> <span id="charCount">0</span>/300 characters (80–300 required)
+                                    </div>
+                                    <div class="invalid-feedback">Please enter a message between 80 and 300 characters.</div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <div class="contact-detail">
+                            <p><i class="fas fa-phone me-2"></i>+234 803 123 4567</p>
+                        </div>
+
+                        <h4>Email</h4>
+                        <div class="contact-detail">
+                            <p><i class="fas fa-envelope me-2"></i>bgtsales@bgtechnical.com</p>
+                        </div>
+
+                        <h4>Address</h4>
+                        <div class="contact-detail">
+                            <p><i class="fas fa-map-marker-alt me-2"></i>149 Trans Amadi Ind.<br>Layout, Port Harcourt,<br>Rivers, Nigeria</p>
+                        </div>
+
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Validate required fields
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    field.classList.remove('is-invalid');
+                }
+            });
+
+            // Validate message length
+            const messageField = this.querySelector('#message');
+            const messageLength = messageField.value.length;
+
+            if (messageLength < 80 || messageLength > 300) {
+                messageField.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                messageField.classList.remove('is-invalid');
+            }
+
+            if (isValid) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+                submitBtn.disabled = true;
+
+                // Simulate form submission (replace with actual API call in production)
+                setTimeout(() => {
+                    alert('Thank you for your message! We will get back to you soon.');
+                    this.reset();
+                    document.getElementById('charCount').textContent = '0';
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }
+        });
+
+        // Character counter for message field
+        const messageField = document.querySelector('#message');
+        const charCount = document.querySelector('#charCount');
+        const hintText = document.querySelector('.form-text');
+
+        messageField.addEventListener('input', function() {
+            const length = this.value.length;
+            charCount.textContent = length;
+
+            const hintIcon = hintText.querySelector('i');
+            if (length < 80) {
+                hintIcon.className = 'fas fa-info-circle';
+                hintText.style.color = '#6c757d';
+            } else if (length <= 300) {
+                hintIcon.className = 'fas fa-check-circle';
+                hintText.style.color = '#28a745';
+            } else {
+                hintIcon.className = 'fas fa-exclamation-triangle';
+                hintText.style.color = '#dc3545';
+            }
+        });
+
+        // Smooth animations for form inputs
+        document.addEventListener('DOMContentLoaded', function() {
+            const formInputs = document.querySelectorAll('.form-control, .form-select');
+            formInputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                });
+                input.addEventListener('blur', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
